@@ -9,5 +9,11 @@
         <classes>
             <class name="tests.FormTest"/>
         </classes>
+    </test>
+    
+    <test name="WebTableTests">
+        <classes>
+            <class name="tests.WebTableTest"/>
+        </classes>
     </test><!-- Test -->
 </suite> <!-- Suite -->
