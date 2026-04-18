@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  FormTests</title>
+<title>TestNG:  Module5_Widgets</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>FormTests</h2><table border='1' align="center">
+<h2 align='center'>Module5_Widgets</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 18 15:53:02 IST 2026</td>
+<td>Started on:</td><td>Sat Apr 18 15:54:18 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37653 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10385 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.FormTest.testCheckbox()'><b>testCheckbox</b><br>Test class: tests.FormTest</td>
-<td><div><pre>java.lang.AssertionError: Checkbox test failed. Screenshot captured.
-	at tests.FormTest.testCheckbox(FormTest.java:96)
+<td title='tests.WidgetsTest.testSlider()'><b>testSlider</b><br>Test class: tests.WidgetsTest</td>
+<td><div><pre>java.lang.AssertionError: Slider value is not within expected range expected [true] but found [false]
+	at tests.WidgetsTest.testSlider(WidgetsTest.java:63)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace245298614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace245298614'><pre>java.lang.AssertionError: Checkbox test failed. Screenshot captured.
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1553563112", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1553563112'><pre>java.lang.AssertionError: Slider value is not within expected range expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at tests.FormTest.testCheckbox(FormTest.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.WidgetsTest.testSlider(WidgetsTest.java:63)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,8 +115,48 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>10</td>
-<td>tests.FormTest@2235eaab</td></tr>
+<td>0</td>
+<td>tests.WidgetsTest@31edaa7d</td></tr>
+<tr>
+<td title='tests.WidgetsTest.testAccordion()'><b>testAccordion</b><br>Test class: tests.WidgetsTest</td>
+<td><div><pre>java.lang.AssertionError: Accordion test failed
+	at tests.WidgetsTest.testAccordion(WidgetsTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1513046042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1513046042'><pre>java.lang.AssertionError: Accordion test failed
+	at org.testng.Assert.fail(Assert.java:111)
+	at tests.WidgetsTest.testAccordion(WidgetsTest.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.WidgetsTest@31edaa7d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -125,20 +167,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.FormTest.testFormSubmission()'><b>testFormSubmission</b><br>Test class: tests.FormTest<br>Parameters: Bhavya, Sree, bhavya@gmail.com, 9876543210</td>
-<td></td>
-<td>1</td>
-<td>tests.FormTest@2235eaab</td></tr>
-<tr>
-<td title='tests.FormTest.testRadioButton()'><b>testRadioButton</b><br>Test class: tests.FormTest</td>
+<td title='tests.WidgetsTest.testDatePicker()'><b>testDatePicker</b><br>Test class: tests.WidgetsTest</td>
 <td></td>
 <td>0</td>
-<td>tests.FormTest@2235eaab</td></tr>
-<tr>
-<td title='tests.FormTest.testEmptyFormValidation()'><b>testEmptyFormValidation</b><br>Test class: tests.FormTest</td>
-<td></td>
-<td>10</td>
-<td>tests.FormTest@2235eaab</td></tr>
+<td>tests.WidgetsTest@31edaa7d</td></tr>
 </table><p>
 </body>
 </html>

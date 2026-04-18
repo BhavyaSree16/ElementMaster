@@ -1,29 +1,422 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="14" passed="8" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-18T15:47:04 IST" name="Default suite" finished-at="2026-04-18T15:47:15 IST" duration-ms="11811">
+  <suite started-at="2026-04-18T15:53:02 IST" name="Suite" finished-at="2026-04-18T15:54:29 IST" duration-ms="86499">
     <groups>
     </groups>
-    <test started-at="2026-04-18T15:47:04 IST" name="Default test" finished-at="2026-04-18T15:47:15 IST" duration-ms="11811">
-      <class name="tests.WidgetsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WidgetsTest@22ff4249]" started-at="2026-04-18T15:47:04 IST" name="setup" finished-at="2026-04-18T15:47:07 IST" duration-ms="3821" status="PASS">
+    <test started-at="2026-04-18T15:53:02 IST" name="FormTests" finished-at="2026-04-18T15:53:40 IST" duration-ms="37653">
+      <class name="tests.FormTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:02 IST" name="setup" finished-at="2026-04-18T15:53:06 IST" duration-ms="3950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testDatePicker()[pri:1, instance:tests.WidgetsTest@22ff4249]" started-at="2026-04-18T15:47:07 IST" name="testDatePicker" finished-at="2026-04-18T15:47:09 IST" duration-ms="1067" status="PASS">
+        <test-method signature="testFormSubmission(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:06 IST" name="testFormSubmission" data-provider="formData" finished-at="2026-04-18T15:53:08 IST" duration-ms="1349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhavya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sree]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bhavya@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDatePicker -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WidgetsTest@22ff4249]" started-at="2026-04-18T15:47:09 IST" name="teardown" finished-at="2026-04-18T15:47:09 IST" duration-ms="307" status="PASS">
+        </test-method> <!-- testFormSubmission -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:08 IST" name="teardown" finished-at="2026-04-18T15:53:08 IST" duration-ms="525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WidgetsTest@22ff4249]" started-at="2026-04-18T15:47:09 IST" name="setup" finished-at="2026-04-18T15:47:12 IST" duration-ms="2799" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:08 IST" name="setup" finished-at="2026-04-18T15:53:11 IST" duration-ms="2723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testSlider()[pri:2, instance:tests.WidgetsTest@22ff4249]" started-at="2026-04-18T15:47:12 IST" name="testSlider" finished-at="2026-04-18T15:47:12 IST" duration-ms="234" status="FAIL">
+        <test-method signature="testRadioButton()[pri:2, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:11 IST" name="testRadioButton" finished-at="2026-04-18T15:53:11 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadioButton -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:11 IST" name="teardown" finished-at="2026-04-18T15:53:11 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:11 IST" name="setup" finished-at="2026-04-18T15:53:14 IST" duration-ms="2672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCheckbox()[pri:3, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:14 IST" name="testCheckbox" finished-at="2026-04-18T15:53:25 IST" duration-ms="10707" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Checkbox test failed. Screenshot captured.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Checkbox test failed. Screenshot captured.
+at org.testng.Assert.fail(Assert.java:111)
+at tests.FormTest.testCheckbox(FormTest.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:25 IST" name="teardown" finished-at="2026-04-18T15:53:25 IST" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:25 IST" name="setup" finished-at="2026-04-18T15:53:29 IST" duration-ms="3798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testEmptyFormValidation()[pri:4, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:29 IST" name="testEmptyFormValidation" finished-at="2026-04-18T15:53:40 IST" duration-ms="10699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyFormValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.FormTest@2235eaab]" started-at="2026-04-18T15:53:40 IST" name="teardown" finished-at="2026-04-18T15:53:40 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.FormTest -->
+    </test> <!-- FormTests -->
+    <test started-at="2026-04-18T15:53:40 IST" name="WebTableTests" finished-at="2026-04-18T15:54:08 IST" duration-ms="27520">
+      <class name="tests.WebTableTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:53:40 IST" name="setup" finished-at="2026-04-18T15:53:43 IST" duration-ms="2697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddRecord(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:53:43 IST" name="testAddRecord" data-provider="tableData" finished-at="2026-04-18T15:53:44 IST" duration-ms="1614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhavya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sree]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bhavya@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[50000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddRecord -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:53:44 IST" name="teardown" finished-at="2026-04-18T15:53:45 IST" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:53:45 IST" name="setup" finished-at="2026-04-18T15:53:48 IST" duration-ms="2761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSlider()[pri:2, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:53:48 IST" name="testSlider" finished-at="2026-04-18T15:53:48 IST" duration-ms="382" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Slider test failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Slider test failed
+at org.testng.Assert.fail(Assert.java:111)
+at tests.WebTableTest.testSlider(WebTableTest.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSlider -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:53:48 IST" name="teardown" finished-at="2026-04-18T15:53:48 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:53:48 IST" name="setup" finished-at="2026-04-18T15:53:51 IST" duration-ms="2721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDeleteRecord(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:53:51 IST" name="testDeleteRecord" data-provider="tableData" finished-at="2026-04-18T15:54:04 IST" duration-ms="12880" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhavya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sree]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bhavya@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[50000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Delete failed due to element interaction issue]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Delete failed due to element interaction issue
+at org.testng.Assert.fail(Assert.java:111)
+at tests.WebTableTest.testDeleteRecord(WebTableTest.java:105)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteRecord -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:54:04 IST" name="teardown" finished-at="2026-04-18T15:54:04 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:54:04 IST" name="setup" finished-at="2026-04-18T15:54:07 IST" duration-ms="3197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPagination()[pri:4, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:54:07 IST" name="testPagination" finished-at="2026-04-18T15:54:07 IST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPagination -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebTableTest@34b9f960]" started-at="2026-04-18T15:54:07 IST" name="teardown" finished-at="2026-04-18T15:54:08 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.WebTableTest -->
+    </test> <!-- WebTableTests -->
+    <test started-at="2026-04-18T15:54:08 IST" name="Module3Tests" finished-at="2026-04-18T15:54:18 IST" duration-ms="10566">
+      <class name="tests.FramesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FramesTest@24c22fe]" started-at="2026-04-18T15:54:11 IST" name="setup" finished-at="2026-04-18T15:54:14 IST" duration-ms="2766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testNestedFrames()[pri:0, instance:tests.FramesTest@24c22fe]" started-at="2026-04-18T15:54:14 IST" name="testNestedFrames" finished-at="2026-04-18T15:54:15 IST" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNestedFrames -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.FramesTest@24c22fe]" started-at="2026-04-18T15:54:15 IST" name="teardown" finished-at="2026-04-18T15:54:15 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.FramesTest -->
+      <class name="tests.AlertsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AlertsTest@13bc8645]" started-at="2026-04-18T15:54:08 IST" name="setup" finished-at="2026-04-18T15:54:10 IST" duration-ms="2693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAlerts()[pri:0, instance:tests.AlertsTest@13bc8645]" started-at="2026-04-18T15:54:10 IST" name="testAlerts" finished-at="2026-04-18T15:54:11 IST" duration-ms="657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAlerts -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AlertsTest@13bc8645]" started-at="2026-04-18T15:54:11 IST" name="teardown" finished-at="2026-04-18T15:54:11 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.AlertsTest -->
+      <class name="tests.WindowsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WindowsTest@93081b6]" started-at="2026-04-18T15:54:15 IST" name="setup" finished-at="2026-04-18T15:54:18 IST" duration-ms="2690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testWindow()[pri:0, instance:tests.WindowsTest@93081b6]" started-at="2026-04-18T15:54:18 IST" name="testWindow" finished-at="2026-04-18T15:54:18 IST" duration-ms="408" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at tests.WindowsTest.testWindow(WindowsTest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWindow -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WindowsTest@93081b6]" started-at="2026-04-18T15:54:18 IST" name="teardown" finished-at="2026-04-18T15:54:18 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.WindowsTest -->
+    </test> <!-- Module3Tests -->
+    <test started-at="2026-04-18T15:54:18 IST" name="Module5_Widgets" finished-at="2026-04-18T15:54:29 IST" duration-ms="10385">
+      <class name="tests.WidgetsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WidgetsTest@31edaa7d]" started-at="2026-04-18T15:54:18 IST" name="setup" finished-at="2026-04-18T15:54:21 IST" duration-ms="2757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDatePicker()[pri:1, instance:tests.WidgetsTest@31edaa7d]" started-at="2026-04-18T15:54:21 IST" name="testDatePicker" finished-at="2026-04-18T15:54:22 IST" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDatePicker -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WidgetsTest@31edaa7d]" started-at="2026-04-18T15:54:22 IST" name="teardown" finished-at="2026-04-18T15:54:22 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WidgetsTest@31edaa7d]" started-at="2026-04-18T15:54:22 IST" name="setup" finished-at="2026-04-18T15:54:25 IST" duration-ms="2809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSlider()[pri:2, instance:tests.WidgetsTest@31edaa7d]" started-at="2026-04-18T15:54:25 IST" name="testSlider" finished-at="2026-04-18T15:54:25 IST" duration-ms="244" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Slider value is not within expected range expected [true] but found [false]]]>
@@ -68,15 +461,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSlider -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WidgetsTest@22ff4249]" started-at="2026-04-18T15:47:12 IST" name="teardown" finished-at="2026-04-18T15:47:12 IST" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WidgetsTest@31edaa7d]" started-at="2026-04-18T15:54:25 IST" name="teardown" finished-at="2026-04-18T15:54:25 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WidgetsTest@22ff4249]" started-at="2026-04-18T15:47:12 IST" name="setup" finished-at="2026-04-18T15:47:15 IST" duration-ms="2792" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WidgetsTest@31edaa7d]" started-at="2026-04-18T15:54:25 IST" name="setup" finished-at="2026-04-18T15:54:28 IST" duration-ms="2908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testAccordion()[pri:3, instance:tests.WidgetsTest@22ff4249]" started-at="2026-04-18T15:47:15 IST" name="testAccordion" finished-at="2026-04-18T15:47:15 IST" duration-ms="339" status="FAIL">
+        <test-method signature="testAccordion()[pri:3, instance:tests.WidgetsTest@31edaa7d]" started-at="2026-04-18T15:54:28 IST" name="testAccordion" finished-at="2026-04-18T15:54:29 IST" duration-ms="317" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Accordion test failed]]>
@@ -119,11 +512,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAccordion -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WidgetsTest@22ff4249]" started-at="2026-04-18T15:47:15 IST" name="teardown" finished-at="2026-04-18T15:47:15 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WidgetsTest@31edaa7d]" started-at="2026-04-18T15:54:29 IST" name="teardown" finished-at="2026-04-18T15:54:29 IST" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.WidgetsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Module5_Widgets -->
+  </suite> <!-- Suite -->
 </testng-results>

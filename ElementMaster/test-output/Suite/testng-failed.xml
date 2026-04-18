@@ -10,9 +10,44 @@
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="testEmptyFormValidation"/>
+          <include name="testCheckbox"/>
         </methods>
       </class> <!-- tests.FormTest -->
     </classes>
   </test> <!-- FormTests(failed) -->
+  <test thread-count="5" name="WebTableTests(failed)">
+    <classes>
+      <class name="tests.WebTableTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testSlider"/>
+          <include name="testDeleteRecord" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.WebTableTest -->
+    </classes>
+  </test> <!-- WebTableTests(failed) -->
+  <test thread-count="5" name="Module3Tests(failed)">
+    <classes>
+      <class name="tests.WindowsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testWindow"/>
+        </methods>
+      </class> <!-- tests.WindowsTest -->
+    </classes>
+  </test> <!-- Module3Tests(failed) -->
+  <test thread-count="5" name="Module5_Widgets(failed)">
+    <classes>
+      <class name="tests.WidgetsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testAccordion"/>
+          <include name="testSlider"/>
+        </methods>
+      </class> <!-- tests.WidgetsTest -->
+    </classes>
+  </test> <!-- Module5_Widgets(failed) -->
 </suite> <!-- Failed suite [Suite] -->
