@@ -26,5 +26,13 @@
             <class name="tests.FramesTest"/>
             <class name="tests.WindowsTest"/>
         </classes>
-    </test> <!-- Test -->
+    </test> 
+ <!-- Module-4 is already edited in FramesTest and FramesPage it self-->
+ 
+ <!-- Module 5 -->
+    <test name="Module5_Widgets">
+        <classes>
+            <class name="tests.WidgetsTest"/>
+        </classes>
+    </test>  <!-- Test -->
 </suite> <!-- Suite -->

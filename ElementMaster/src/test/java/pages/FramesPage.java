@@ -2,6 +2,7 @@ package pages;
 
 import base.BasePage;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class FramesPage extends BasePage {
 
@@ -9,27 +10,71 @@ public class FramesPage extends BasePage {
         super(driver);
     }
 
-    By menu = By.xpath("//span[text()='Frames']");
-    By frame1 = By.id("frame1");
-    By frameText = By.id("sampleHeading");
+    By menu = By.xpath("//h5[text()='Alerts, Frame & Windows']");
+    By nestedFramesMenu = By.xpath("//span[text()='Nested Frames']");
+
+    By parentFrame = By.id("frame1");
+    By childFrame = By.xpath("//iframe[contains(@srcdoc,'Child')]");
+
+    By bodyText = By.tagName("body");
 
     public void navigate() {
-        click(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
+
+        System.out.println("Navigating to nested frames page");
+
+        scrollTo(menu);
         click(menu);
+
+        scrollTo(nestedFramesMenu);
+        click(nestedFramesMenu);
     }
 
-    public String getFrameText() {
+    public String getParentFrameText() {
 
-        System.out.println("Switching to frame");
+        System.out.println("Switching to parent frame");
 
-        driver.switchTo().frame(driver.findElement(frame1));
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(parentFrame));
 
-        String text = driver.findElement(frameText).getText();
+        String text = driver.findElement(bodyText).getText();
 
-        System.out.println("Frame text is " + text);
-
-        driver.switchTo().defaultContent();
+        System.out.println("Parent frame text is " + text);
 
         return text;
+    }
+
+    public String getChildFrameText() {
+
+        System.out.println("Switching to child frame");
+
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(childFrame));
+
+        String text = driver.findElement(bodyText).getText();
+
+        System.out.println("Child frame text is " + text);
+
+        return text;
+    }
+
+    public void switchToMainPage() {
+
+        System.out.println("Switching back to main content");
+
+        driver.switchTo().defaultContent();
+    }
+
+    public boolean isMainPageAccessible() {
+
+        System.out.println("Checking main page access");
+
+        try {
+            WebElement element = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//span[text()='Nested Frames']")
+                )
+            );
+            return element.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 }

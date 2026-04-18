@@ -4,6 +4,7 @@ import base.BaseTest;
 import org.testng.annotations.*;
 import org.testng.Assert;
 import pages.WebTablePage;
+import pages.WidgetsPage;
 import utils.ConfigReader;
 import utils.ScreenshotUtil;
 
@@ -41,19 +42,40 @@ public class WebTableTest extends BaseTest {
         System.out.println("Add record test completed");
     }
 
-    @Test(dataProvider = "tableData", priority = 2)
-    public void testSearchRecord(String fname, String lname, String email, String age, String salary, String dept) {
+    @Test(priority = 2)
+    public void testSlider() {
 
-        System.out.println("Starting search test");
+        System.out.println("Starting slider test");
 
-        WebTablePage page = new WebTablePage(driver);
+        WidgetsPage page = new WidgetsPage(driver);
+        page.navigateToSlider();
 
-        page.navigate();
-        page.searchRecord(fname);
+        try {
 
-        Assert.assertTrue(page.isRecordPresent(fname));
+            String value = ConfigReader.get("sliderValue");
 
-        System.out.println("Search test completed");
+            page.moveSlider(value);
+
+            String actual = page.getSliderValue();
+
+            int actualVal = Integer.parseInt(actual);
+            int expectedVal = Integer.parseInt(value);
+
+            System.out.println("Slider value is " + actualVal);
+
+            Assert.assertTrue(
+                actualVal >= expectedVal - 2 && actualVal <= expectedVal + 2,
+                "Slider value is not within expected range"
+            );
+
+        } catch (Throwable e) {
+
+            System.out.println("Slider test failed taking screenshot");
+
+            ScreenshotUtil.capture(driver, "SliderFailure");
+
+            Assert.fail("Slider test failed");
+        }
     }
 
     @Test(dataProvider = "tableData", priority = 3)
