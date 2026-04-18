@@ -1,196 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-18T14:18:54 IST" name="Default suite" finished-at="2026-04-18T14:19:27 IST" duration-ms="33284">
+  <suite started-at="2026-04-18T15:13:54 IST" name="Default suite" finished-at="2026-04-18T15:14:00 IST" duration-ms="5910">
     <groups>
     </groups>
-    <test started-at="2026-04-18T14:18:54 IST" name="Default test" finished-at="2026-04-18T14:19:27 IST" duration-ms="33284">
-      <class name="tests.WebTableTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:18:54 IST" name="setup" finished-at="2026-04-18T14:18:58 IST" duration-ms="4238" status="PASS">
+    <test started-at="2026-04-18T15:13:54 IST" name="Default test" finished-at="2026-04-18T15:14:00 IST" duration-ms="5910">
+      <class name="tests.AlertsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AlertsTest@40a4337a]" started-at="2026-04-18T15:13:55 IST" name="setup" finished-at="2026-04-18T15:13:58 IST" duration-ms="3960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testAddRecord(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:18:58 IST" name="testAddRecord" data-provider="tableData" finished-at="2026-04-18T14:19:01 IST" duration-ms="2656" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Bhavya]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sree]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[bhavya@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[25]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[50000]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[QA]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testAlerts()[pri:0, instance:tests.AlertsTest@40a4337a]" started-at="2026-04-18T15:13:58 IST" name="testAlerts" finished-at="2026-04-18T15:14:00 IST" duration-ms="1360" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddRecord -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:19:01 IST" name="teardown" finished-at="2026-04-18T14:19:02 IST" duration-ms="864" status="PASS">
+        </test-method> <!-- testAlerts -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AlertsTest@40a4337a]" started-at="2026-04-18T15:14:00 IST" name="teardown" finished-at="2026-04-18T15:14:00 IST" duration-ms="544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:19:02 IST" name="setup" finished-at="2026-04-18T14:19:05 IST" duration-ms="3248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testSearchRecord(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:19:05 IST" name="testSearchRecord" data-provider="tableData" finished-at="2026-04-18T14:19:06 IST" duration-ms="1032" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Bhavya]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sree]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[bhavya@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[25]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[50000]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[QA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchRecord -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:19:06 IST" name="teardown" finished-at="2026-04-18T14:19:06 IST" duration-ms="556" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:19:06 IST" name="setup" finished-at="2026-04-18T14:19:09 IST" duration-ms="2950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testDeleteRecord(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:19:09 IST" name="testDeleteRecord" data-provider="tableData" finished-at="2026-04-18T14:19:23 IST" duration-ms="13182" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Bhavya]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sree]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[bhavya@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[25]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[50000]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[QA]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Delete failed due to element interaction issue]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Delete failed due to element interaction issue
-at org.testng.Assert.fail(Assert.java:111)
-at tests.WebTableTest.testDeleteRecord(WebTableTest.java:83)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteRecord -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:19:23 IST" name="teardown" finished-at="2026-04-18T14:19:23 IST" duration-ms="463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:19:23 IST" name="setup" finished-at="2026-04-18T14:19:26 IST" duration-ms="3350" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testPagination()[pri:4, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:19:26 IST" name="testPagination" finished-at="2026-04-18T14:19:27 IST" duration-ms="340" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPagination -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.WebTableTest@682b2fa]" started-at="2026-04-18T14:19:27 IST" name="teardown" finished-at="2026-04-18T14:19:27 IST" duration-ms="339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.WebTableTest -->
+      </class> <!-- tests.AlertsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
