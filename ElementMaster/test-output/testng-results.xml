@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-18T13:47:20 IST" name="Default suite" finished-at="2026-04-18T13:48:00 IST" duration-ms="39474">
+    <groups>
+    </groups>
+    <test started-at="2026-04-18T13:47:20 IST" name="Default test" finished-at="2026-04-18T13:48:00 IST" duration-ms="39474">
+      <class name="tests.FormTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:21 IST" name="setup" finished-at="2026-04-18T13:47:24 IST" duration-ms="3926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFormSubmission(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:24 IST" name="testFormSubmission" data-provider="formData" finished-at="2026-04-18T13:47:26 IST" duration-ms="1704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhavya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sree]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bhavya@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormSubmission -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:26 IST" name="teardown" finished-at="2026-04-18T13:47:27 IST" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:27 IST" name="setup" finished-at="2026-04-18T13:47:30 IST" duration-ms="3375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRadioButton()[pri:2, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:30 IST" name="testRadioButton" finished-at="2026-04-18T13:47:31 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadioButton -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:31 IST" name="teardown" finished-at="2026-04-18T13:47:31 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:31 IST" name="setup" finished-at="2026-04-18T13:47:34 IST" duration-ms="3186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCheckbox()[pri:3, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:34 IST" name="testCheckbox" finished-at="2026-04-18T13:47:45 IST" duration-ms="10732" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Checkbox test failed. Screenshot captured.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Checkbox test failed. Screenshot captured.
+at org.testng.Assert.fail(Assert.java:111)
+at tests.FormTest.testCheckbox(FormTest.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:45 IST" name="teardown" finished-at="2026-04-18T13:47:45 IST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:45 IST" name="setup" finished-at="2026-04-18T13:47:48 IST" duration-ms="2904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testEmptyFormValidation()[pri:4, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:48 IST" name="testEmptyFormValidation" finished-at="2026-04-18T13:47:59 IST" duration-ms="10716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyFormValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.FormTest@682b2fa]" started-at="2026-04-18T13:47:59 IST" name="teardown" finished-at="2026-04-18T13:48:00 IST" duration-ms="932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.FormTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
